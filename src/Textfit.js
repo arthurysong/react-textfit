@@ -67,12 +67,12 @@ export default class TextFit extends React.Component {
         this.process();
     }
 
-    componentDidUpdate(prevProps) {
-        const { ready } = this.state;
-        if (!ready) return;
-        if (shallowEqual(this.props, prevProps)) return;
-        this.process();
-    }
+    // componentDidUpdate(prevProps) {
+    //     const { ready } = this.state;
+    //     if (!ready) return;
+    //     if (shallowEqual(this.props, prevProps)) return;
+    //     this.process();
+    // }
 
     componentWillUnmount() {
         const { autoResize } = this.props;
