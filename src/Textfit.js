@@ -60,10 +60,10 @@ export default class TextFit extends React.Component {
     }
 
     componentDidMount() {
-        const { autoResize } = this.props;
-        if (autoResize) {
-            window.addEventListener('resize', this.handleWindowResize);
-        }
+        // const { autoResize } = this.props;
+        // if (autoResize) {
+        //     window.addEventListener('resize', this.handleWindowResize);
+        // }
         this.process();
     }
 
